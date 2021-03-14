@@ -3,7 +3,7 @@ use std::ffi::{CString, CStr};
 
 #[no_mangle]
 pub extern "C" fn add(a: i64, b: i64) -> i64 {
-    add(a, b)
+    return signer::add(a, b);
 }
 
 #[no_mangle]
@@ -24,7 +24,6 @@ pub extern fn rust_cstr_free(s: *mut c_char) {
         CString::from_raw(s)
     };
 }
-
 
 #[cfg(test)]
 mod tests {

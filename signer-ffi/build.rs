@@ -1,6 +1,6 @@
 
 fn build_c() {
-    
+
     let crate_dir = std::env::var("CARGO_MANIFEST_DIR").unwrap();
 
     let mut config = cbindgen::Config::default();
@@ -23,6 +23,7 @@ fn build_dart() {
     let config = DynamicLibraryConfig {
         ios: DynamicLibraryCreationMode::Executable.into(),
         android: DynamicLibraryCreationMode::open("libsigner_ffi.so").into(),
+        windows: DynamicLibraryCreationMode::open("signer_ffi.dll").into(),
         ..Default::default()
     };
     // load the c header file, with config and lib name
@@ -35,13 +36,12 @@ fn build_dart() {
         .unwrap();
     // generate the dart code and get the bindings back
     let bindings = codegen.generate().unwrap();
-    // write the bindings to your dart package
-    // and start using it to write your own high level abstraction.
-    bindings.write_to_file("../../lib/ffi.dart").unwrap();
+
+    // write the bindings to your dart package TODO change you path
+    bindings.write_to_file("../examples/ffi/dart/bin/binding.dart").unwrap();
 }
 
 fn main() {
-
     build_c();
 
     build_dart();

@@ -5,6 +5,9 @@ A cross platform cryptograph library.
 ## Requires
 
 - Rust
+    * cbindgen;
+    * dart-bindgen
+
 - Dart
 - Flutter
 
@@ -18,4 +21,22 @@ A cross platform cryptograph library.
 
 
 
-# Flow
+# Run dev
+
+* Build lib.
+```
+cargo build
+```
+
+* Run dart
+
+copy lib to /bin. then run.
+
+- Windows
+
+```
+cp ./target/debug/signer_ffi.dll ./examples/ffi/dart/
+
+cd ./examples/ffi/dart
+dart ./bin/main.dart
+```
