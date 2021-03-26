@@ -14,6 +14,7 @@ A cross platform cryptograph library.
 ## Docs
 
 - [flutter-rust-ffi](https://github.com/brickpop/flutter-rust-ffi/blob/master/README.md)
+- [flutterrust](https://github.com/shekohex/flutterust/blob/master/lib/main.dart)
 
 ## Support crypto
 
