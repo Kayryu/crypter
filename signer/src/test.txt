@@ -1,0 +1,132 @@
+
+/*
+
+sk-d:000111011100001001 sk-e:010000000000000001, pk-n:001110000010000111 pk-e:010000000000000001
+sk-d:001001101011100101 sk-e:010000000000000001, pk-n:001011011111001101 pk-e:010000000000000001
+sk-d:001011001110000001 sk-e:010000000000000001, pk-n:001011101100011001 pk-e:010000000000000001
+sk-d:000100001111110001 sk-e:010000000000000001, pk-n:001010001001011111 pk-e:010000000000000001
+x: 001010111011111111
+x: 000010000101011111
+x: 000000101010010000
+x: 001010001101110100
+v: 001000000011101110
+k: 001101010010000111
+y-0 : 000011110101110011
+y-1 : 001000010000001110
+y-2 : 001010111011010000
+lr 000011110111000100
+lr mod 000011110111000100
+d 000101010001101001, n 001010001001011111
+z: 33006, v: 33006
+
+*/
+
+/*
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [40723] }, e: BigUint { data: [65537] } }, d: BigUint { data: [5633] }, primes: [BigUint { data: [211] }, BigUint { data: [193] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [173] }, dq: BigUint { data: [65] }, qinv: BigInt { sign: Plus, data: BigUint { data: [82] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [40723] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [40723] }, e: BigUint { data: [65537] } }, d: BigUint { data: [5633] }, primes: [BigUint { data: [193] }, BigUint { data: [211] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [65] }, dq: BigUint { data: [173] }, qinv: BigInt { sign: Plus, data: BigUint { data: [118] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [40723] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [51067] }, e: BigUint { data: [65537] } }, d: BigUint { data: [25001] }, primes: [BigUint { data: [223] }, BigUint { data: [229] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [137] }, dq: BigUint { data: [149] }, qinv: BigInt { sign: Plus, data: BigUint { data: [186] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [51067] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [50429] }, e: BigUint { data: [65537] } }, d: BigUint { data: [46793] }, primes: [BigUint { data: [239] }, BigUint { data: [211] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [145] }, dq: BigUint { data: [173] }, qinv: BigInt { sign: Plus, data: BigUint { data: [128] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [50429] }, e: BigUint { data: [65537] } }
+sk-d:000001011000000001 sk-e:010000000000000001, pk-n:001001111100010011 pk-e:010000000000000001
+sk-d:000001011000000001 sk-e:010000000000000001, pk-n:001001111100010011 pk-e:010000000000000001
+sk-d:000110000110101001 sk-e:010000000000000001, pk-n:001100011101111011 pk-e:010000000000000001
+sk-d:001011011011001001 sk-e:010000000000000001, pk-n:001100010011111101 pk-e:010000000000000001
+x: 001101000110000100
+x: 001101010100110001
+x: 000001001010110001
+x: 000111001011111101
+v: 000010110000111111
+k: 000011000011110000
+l-0 : 000110110001101111
+l-1 : 001011010111010110
+l-2 : 001000010010010011
+lr 001000010010010011
+lr mod 001000010010010011
+d 000001110011001111, n 001100010011111101
+@@@@@@@@@@
+d 000101110100111001
+r 000101110100111001
+z: 11327, v: 11327
+test rsa_ringsig::test_ek ... ok
+*/
+
+/*
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [51959] }, e: BigUint { data: [65537] } }, d: BigUint { data: [40097] }, primes: [BigUint { data: [223] }, BigUint { data: [233] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [137] }, dq: BigUint { data: [193] }, qinv: BigInt { sign: Plus, data: BigUint { data: [67] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [51959] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [53743] }, e: BigUint { data: [65537] } }, d: BigUint { data: [32993] }, primes: [BigUint { data: [223] }, BigUint { data: [241] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [137] }, dq: BigUint { data: [113] }, qinv: BigInt { sign: Plus, data: BigUint { data: [62] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [53743] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [47897] }, e: BigUint { data: [65537] } }, d: BigUint { data: [45953] }, primes: [BigUint { data: [211] }, BigUint { data: [227] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [173] }, dq: BigUint { data: [75] }, qinv: BigInt { sign: Plus, data: BigUint { data: [66] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [47897] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [51983] }, e: BigUint { data: [65537] } }, d: BigUint { data: [43241] }, primes: [BigUint { data: [229] }, BigUint { data: [227] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [149] }, dq: BigUint { data: [75] }, qinv: BigInt { sign: Plus, data: BigUint { data: [114] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [51983] }, e: BigUint { data: [65537] } }
+sk-d:001001110010100001 sk-e:010000000000000001, pk-n:001100101011110111 pk-e:010000000000000001
+sk-d:001000000011100001 sk-e:010000000000000001, pk-n:001101000111101111 pk-e:010000000000000001
+sk-d:001011001110000001 sk-e:010000000000000001, pk-n:001011101100011001 pk-e:010000000000000001
+sk-d:001010100011101001 sk-e:010000000000000001, pk-n:001100101100001111 pk-e:010000000000000001
+x: 001000010010001101
+x: 000000111110011101
+x: 000001001101000110
+x: 001101101111000011
+v: 000011011010001111
+k: 001110101110111100
+l-0 : 000111010111001010
+l-1 : 001000100111000011
+l-2 : 000110110010111110
+lr 000110110010111110
+lr mod 000110110010111110
+d 001101110100110011, n 001100101100001111
+#########
+d 000111000001110101
+r 000111000001110101
+z: 63896, v: 13967
+thread 'rsa_ringsig::test_ek' panicked at 'assertion failed: z == v', signer\src\rsa_ringsig.rs:212:5
+*/
+
+/*
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [51959] }, e: BigUint { data: [65537] } }, d: BigUint { data: [40097] }, primes: [BigUint { data: [223] }, BigUint { data: [233] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [137] }, dq: BigUint { data: [193] }, qinv: BigInt { sign: Plus, data: BigUint { data: [67] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [51959] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [49447] }, e: BigUint { data: [65537] } }, d: BigUint { data: [13473] }, primes: [BigUint { data: [197] }, BigUint { data: [251] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [145] }, dq: BigUint { data: [223] }, qinv: BigInt { sign: Plus, data: BigUint { data: [135] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [49447] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [43931] }, e: BigUint { data: [65537] } }, d: BigUint { data: [30329] }, primes: [BigUint { data: [223] }, BigUint { data: [197] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [137] }, dq: BigUint { data: [145] }, qinv: BigInt { sign: Plus, data: BigUint { data: [60] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [43931] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [55973] }, e: BigUint { data: [65537] } }, d: BigUint { data: [52973] }, primes: [BigUint { data: [251] }, BigUint { data: [223] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [223] }, dq: BigUint { data: [137] }, qinv: BigInt { sign: Plus, data: BigUint { data: [242] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [55973] }, e: BigUint { data: [65537] } }
+sk-d:001001110010100001 sk-e:010000000000000001, pk-n:001100101011110111 pk-e:010000000000000001
+sk-d:000011010010100001 sk-e:010000000000000001, pk-n:001100000100100111 pk-e:010000000000000001
+sk-d:000111011001111001 sk-e:010000000000000001, pk-n:001010101110011011 pk-e:010000000000000001
+sk-d:001100111011101101 sk-e:010000000000000001, pk-n:001101101010100101 pk-e:010000000000000001
+x: 001111101111100111
+x: 000101001110011111
+x: 000001000010100111
+x: 000011110000000111
+v: 000000000111110010
+k: 001111010000100011
+l-0 : 001100011101010001
+l-1 : 000101100101001001
+l-2 : 001101000010010000
+lr 001101000010010000
+lr mod 001101000010010000
+d 001111010111010001, n 001101101010100101
+#########
+d 000010010101000001
+r 000010010101000001
+z: 61199, v: 498
+*/
+
+/*
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [44719] }, e: BigUint { data: [65537] } }, d: BigUint { data: [7985] }, primes: [BigUint { data: [197] }, BigUint { data: [227] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [145] }, dq: BigUint { data: [75] }, qinv: BigInt { sign: Plus, data: BigUint { data: [46] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [44719] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [41989] }, e: BigUint { data: [65537] } }, d: BigUint { data: [28313] }, primes: [BigUint { data: [199] }, BigUint { data: [211] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [197] }, dq: BigUint { data: [173] }, qinv: BigInt { sign: Plus, data: BigUint { data: [83] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [41989] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [49447] }, e: BigUint { data: [65537] } }, d: BigUint { data: [13473] }, primes: [BigUint { data: [197] }, BigUint { data: [251] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [145] }, dq: BigUint { data: [223] }, qinv: BigInt { sign: Plus, data: BigUint { data: [135] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [49447] }, e: BigUint { data: [65537] } }
+sk: RsaPrivateKey { pubkey_components: RsaPublicKey { n: BigUint { data: [54731] }, e: BigUint { data: [65537] } }, d: BigUint { data: [38225] }, primes: [BigUint { data: [239] }, BigUint { data: [229] }], precomputed: Some(PrecomputedValues { dp: BigUint { data: [145] }, dq: BigUint { data: [149] }, qinv: BigInt { sign: Plus, data: BigUint { data: [215] } }, crt_values: [] }) }, pk: RsaPublicKey { n: BigUint { data: [54731] }, e: BigUint { data: [65537] } }
+sk-d:000001111100110001 sk-e:010000000000000001, pk-n:001010111010101111 pk-e:010000000000000001
+sk-d:000110111010011001 sk-e:010000000000000001, pk-n:001010010000000101 pk-e:010000000000000001
+sk-d:000011010010100001 sk-e:010000000000000001, pk-n:001100000100100111 pk-e:010000000000000001
+sk-d:001001010101010001 sk-e:010000000000000001, pk-n:001101010111001011 pk-e:010000000000000001
+x: 000111111101110100
+x: 001110000011011010
+x: 001001110001001110
+x: 000110001100110101
+v: 001000101101111110
+k: 000111001110001011
+l-0 : 000011010010010100
+l-1 : 000111000011111111
+l-2 : 000010100110110001
+lr 000010100110110001
+lr mod 000010100110110001
+d 001111100011110101, n 001101010111001011
+#########
+d 001100111101000100
+r 001100111101000100
+z: 20641, v: 35710
+*/
