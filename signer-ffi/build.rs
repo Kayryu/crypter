@@ -1,6 +1,4 @@
-
 fn build_c() {
-
     let crate_dir = std::env::var("CARGO_MANIFEST_DIR").unwrap();
 
     let mut config = cbindgen::Config::default();
@@ -38,7 +36,9 @@ fn build_dart() {
     let bindings = codegen.generate().unwrap();
 
     // write the bindings to your dart package TODO change you path
-    bindings.write_to_file("../examples/ffi/dart/bin/binding.dart").unwrap();
+    bindings
+        .write_to_file("../examples/ffi/dart/bin/binding.dart")
+        .unwrap();
 }
 
 fn main() {
